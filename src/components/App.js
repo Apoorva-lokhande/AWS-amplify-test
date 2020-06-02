@@ -23,48 +23,37 @@ const App = () => {
 
         <Switch>
 
-          {/* <Route exact path="/">
+        <Route exact path="/">
             <Login />
-          </Route> */}
-
+          </Route>
           <Route  path="/bookinghistory">
             <BookingHistory />
           </Route>
-
-
-
-          
-
           <Route  path="/profile">
             <UserDetails />
           </Route>
-
-
-          <Route path="/login" render={(): JSX.Element => <Login />} />
-            
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          
           <Route path="/teamregister">
             <Registration />
           </Route>
 
-          <Route path="/register" render={(): JSX.Element => <Register />} />
-
-          
-          
-
-          <Route exact path="/home">
-            <Events />
+          <Route path="/register">
+            <Register />
           </Route>
 
+          <Route path="/home">
+            <Events />
+          </Route>
+  
           <Route path="/aboutevent">
             <AboutEvent/>
           </Route>
 
           <Route path="/pay">
              <Payout/>
-          </Route>
-
-          <Route exact path="/booking">
-             <BookingHistory/>
           </Route>
         </Switch>
     </>
