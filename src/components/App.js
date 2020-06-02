@@ -31,6 +31,10 @@ const App = () => {
             <BookingHistory />
           </Route>
 
+          <Route  path="/">
+            <Login />
+          </Route>
+
           <Route  path="/profile">
             <UserDetails />
           </Route>
