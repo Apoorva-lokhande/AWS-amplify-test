@@ -29,7 +29,7 @@ render(){
         <>
         <div id="events-div">
             <Header
-            rightElement={account}
+            rightElement={this.account}
             leftElement= "TOURNAMENTS"
             />
             {/* <marquee behavior="scroll" direction="left" scrollamount="15">
