@@ -31,6 +31,8 @@ const App = () => {
             <BookingHistory />
           </Route>
 
+
+
           
 
           <Route  path="/profile">
@@ -38,16 +40,16 @@ const App = () => {
           </Route>
 
 
-          <Route  path="/login">
-            <Login />
-          </Route>
+          <Route path="/login" render={(): JSX.Element => <Login />} />
+            
           <Route path="/teamregister">
             <Registration />
           </Route>
 
-          <Route path="/register">
-            <Register />
-          </Route>
+          <Route path="/register" render={(): JSX.Element => <Register />} />
+
+          
+          
 
           <Route exact path="/home">
             <Events />
