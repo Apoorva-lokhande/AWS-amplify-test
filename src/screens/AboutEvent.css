@@ -1,0 +1,265 @@
+
+#button_{
+    width:35%;
+    height: 35%;
+}
+#about-main .head {
+    color: white;
+    font-size: 4vw;
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: lighter;
+}
+
+#about-main nav a {
+    color: #9d0b0b;
+}
+
+#about-main .about-event {
+    /* The image used */
+    background-image: url("./images/event6.jpg");
+
+    /* Height */
+    height: 50vw;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+#about-main .about-heading {
+    padding: 3% 5%;
+}
+
+#about-main .event-logo {
+    width: 15%;
+}
+
+#about-main .about-heading p {
+    display: inline-block;
+    background-color: #5f6769;
+    color: black;
+    font-size: 3vw;
+    padding: 1.5%;
+    margin-right: 2%;
+    font-weight: 700;
+}
+
+#about-main .about-heading h2 {
+    display: inline-block;
+    width: 35%;
+    margin-top: 2%;
+}
+
+#about-main .join {
+    margin: 2% 0;
+    color: white;
+    font-size: 2.9vw;
+}
+
+#about-main .main-content {
+    /* The image used */
+    background-image: url("./images/bar.png");
+
+    /* Full height */
+    /* height: 120vw; */
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#about-main .content {
+    margin: 0 4%;
+}
+
+#about-main .btn-group {
+    margin-top: 4%;
+}
+
+#about-main .about-button {
+    background-color: black;
+    color: #5f6769;
+    padding: 5% 2%;
+    width: 7em;
+    font-size: 1.6vw;
+    border: 2px solid #9d0b0b;
+}
+#registerto{
+    border-radius: 1px;
+    background-color: red;
+    color: white;
+    border-width: 0px;
+    width:60%;
+    height:40px;
+    font-size: 10px;
+    
+
+}
+#aboutname{
+    font-size: 45px;
+    margin-left: 1px;
+    color: white;
+}
+#about-main .about-button:hover {
+    background-color: #3c4245;
+    color: white;
+}
+
+#about-main .register-now-btn {
+    border-left: 2px solid #9d0b0b;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+#prizepoolname{
+    font-size: 45px;
+    margin-left: 15px;
+    color:white;
+}
+#about-main .seats {
+    color: #3c4245;
+    font-family: 'DM Mono', monospace;
+    font-size: 2.5vw;
+}
+
+#about-main .about-heading2 {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 2vw;
+}
+
+#about-main .about-para {
+    color: #5f6769;
+    width: 100%;
+    text-align: left;
+    line-height: 1.4;
+    font-size: 21px;
+
+    margin: 5% 0;
+}
+
+#about-main .shift {
+    margin-left: 1%;
+}
+
+#about-main .row {
+    display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+#about-main .column {
+    flex: 50%;
+    padding: 2%;
+}
+
+#about-main .about-register {
+    /* width: 100%; */
+    padding: 5%;
+    margin-top: 10%;
+    background-color: #9d0b0b;
+}
+
+#about-main .about-register a {
+    color: white;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+#about-main .about-register:hover {
+    background-color: black;
+}
+
+#about-main .about-register a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#about-main .register-heading {
+    color: white;
+    font-size: 2vw;
+}
+
+#about-main .right {
+    width: 50%;
+    margin: 23%;
+    padding: 3%;
+    text-align: center;
+    border: 0.15vw solid #3c4245;
+}
+
+#about-main .about-content {
+    margin-top: 5%;
+}
+
+/* Prize Pool */
+
+/* Create three equal columns that floats next to each other */
+#about-main .column2 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+#about-main .row2 {
+    margin-top: 5%;
+}
+
+  /* Clear floats after the columns */
+#about-main .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#about-main .about-card {
+      width: 100%;
+      height: 100%;
+      border: 0.2vw solid #9d0b0b;
+      background-color: black;
+      text-align: center;
+      padding: 10%;
+}
+
+#about-main .ch {
+    font-size: 3vw;
+    padding: 0 2%;
+}
+
+#about-main .cti {
+    font-size: 1.5vw;
+}
+
+#about-main .ct {
+    font-size: 1.5vw;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#about-main .startTime {
+      margin: 3% 0;
+}
+
+#about-main .time {
+    font-family: 'DM Mono', monospace;
+    font-size: 3.3vw;
+    background-color: black;
+    display: inline-block;
+    color: white;
+    padding: 1.8%;
+    margin: 7% 7% 7% 0;
+}
+
+#about-main .eventTime {
+      text-align: center;
+}
+
+#about-main .card-collapse {
+    margin-top: 5%;
+}

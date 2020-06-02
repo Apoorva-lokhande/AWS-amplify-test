@@ -1,0 +1,43 @@
+/* Footer */
+@font-face {
+  font-family: montserrat;
+  src: url("../screens/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: montserrat-bold;
+  src: url("../screens/fonts/Montserrat-Bold.ttf");
+}
+#footer {
+    margin-top: 15px;
+    padding: 1.5% 15%; 
+    background-color: transparent;
+    /* position: absolute; */
+    bottom:0px;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 100%
+  }
+  
+  .end {
+    color: grey;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 10px;
+    margin-right: 90px;
+    margin-left: 40px;
+    font-family: montserrat-bold;
+  }
+  .services {
+    color: grey;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 10px;
+    font-family: montserrat-bold;
+    margin-right: 80px;
+  
+
+
+  
+
+  }

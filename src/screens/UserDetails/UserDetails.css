@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  list-style: none;
+}
+
+#user-details {
+    /* The image used */
+    background-image: url("../images/bar.png");
+
+    /* Full height */
+    height: 100vh;
+
+    /* Center and scale the image nicely */
+    /* background-position: center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+
+.wrapper .left{
+  width: 30%;
+  background: linear-gradient(to right,#9d0b0b,red);
+  padding: 3% 2%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .left img{
+  border-radius: 2%;
+  margin-bottom: 5%;
+  width: 60%;
+}
+
+.wrapper .left h4{
+  margin-bottom: 10px;
+  font-size: 2vw;
+}
+
+.wrapper .rightUser{
+  width: 70%;
+  background: black;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: solid 1px white;
+  border-left: none;
+}
+
+.wrapper .rightUser .info,
+.wrapper .rightUser .history{
+  margin-bottom: 25px;
+}
+
+.wrapper .rightUser .history {
+  margin-top: 5%;
+}
+
+.wrapper .rightUser .info h3,
+.wrapper .rightUser .history h3{
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.5vw;
+}
+
+.wrapper .rightUser .info_data {
+  margin-top: 3%;
+}
+
+.wrapper .rightUser .info_data,
+.wrapper .rightUser .history_data{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .rightUserUser .info_data .data,
+.wrapper .rightUserUser .history_data .data{
+  width: 45%;
+}
+
+.wrapper .rightUser .info_data .data h4,
+.wrapper .rightUser .history_data .data h4{
+    color: #e0e0e0;
+    margin-bottom: 5px;
+    font-size: 1.1vw;
+}
+
+.wrapper .rightUser .info_data .data p,
+.wrapper .rightUser .history_data .data p{
+  font-size: 1.3vw;
+  margin-bottom: 10px;
+  color: #919aa3;
+}
+
+.wrapper .rightUser .history .booking-btn {
+    background-color: #9d0b0b;
+    margin-top: 2%;
+}
+
+.wrapper .rightUser .history .booking-btn a {
+    color: white;
+    font-size: 1.2vw;
+}
+
+.wrapper .rightUser .history .booking-btn a:hover {
+  text-decoration: none;
+}
+
+.wrapper .rightUser .history .booking-btn:hover {
+    background-color: black;
+} 

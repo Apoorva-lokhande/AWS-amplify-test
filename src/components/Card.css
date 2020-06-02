@@ -1,0 +1,50 @@
+#main-card {
+  width: 25%;
+  background-color: #000000;
+  margin: 2%;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 0 4px 0 rgba(255, 253, 253, 0.19), 0 0 10px 0 rgba(68, 64, 64, 0.19);
+}
+
+#main-card .card-img-top {
+    width: 100%;
+}
+
+#main-card .card-title {
+  font-size: 2vw;
+  color: #9d0b0b;
+  text-align: center;
+}
+
+#main-card .card-text {
+  font-size: 1.7vw;
+  text-align: center;
+  padding: 3%; 
+  color: #888888;
+}
+
+#main-card .small-text {
+  font-size: 1.3vw;
+  color: white;
+}
+
+#main-card .card-btn {
+  padding: 2%;
+  font-size: 1.3vw;
+  margin-top: 5%;
+  background-color: #9d0b0b;
+}
+
+#main-card .btn-1, #main-card  .btn-2 {
+  margin-right: 2%;
+  font-size: 1.1vw;
+}
+
+#main-card .buttons {
+  text-align: center;
+}
+
+#main-card .buttons a:hover {
+  color: black;
+}

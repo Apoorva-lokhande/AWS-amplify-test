@@ -1,0 +1,71 @@
+#rightitem{
+  
+
+    
+}
+.navbar{
+    background-color: transparent;
+    text-align: center;
+height: 10%;
+width:100%;
+}
+@font-face {
+  font-family: montserrat;
+  src: url("../screens/fonts/Montserrat-Regular.ttf");
+}
+#logo-name {
+    font-family: montserrat;
+    font-size: 200%;
+   
+    top: 0px;
+    letter-spacing: 1px;
+    color: #9d0b0b;
+}
+
+#logo-name:hover {
+    color: red;
+}
+
+.button {
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: #9d0b0b;
+}
+
+nav .dropdown {
+    font-size: 1.7vw;
+}
+
+nav .dropdown a:hover {
+    color: #414141;
+    text-decoration: none;
+}
+
+nav .dropdown-menu {
+    font-size: 1.5vw;
+}
+
+/* #events-div a:hover {
+    text-decoration: none;
+    color: #414141;
+} */
+
+nav ul {
+    margin-right: 2%;
+}
+
+nav li {
+    padding: 3%;
+    text-align: center;
+}
+
+.navbar-text .btn-outline-danger a {
+    color: #9d0b0b;
+}
+
+.navbar-text .btn-outline-danger a:hover {
+    color: white;
+    text-decoration: none;
+}

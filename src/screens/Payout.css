@@ -1,0 +1,133 @@
+#payment {
+    font-family: Arial;
+    /* font-size: 2vw; */
+    background-image: url("./images/bar.png");
+    height: 100%;
+  }
+
+#payment h2 {
+      color: #9d0b0b;
+      letter-spacing: 0.5vw;
+      font-size: 3.3vw;
+      display: inline-block;
+      font-weight: bold;
+  }
+
+  #payment h3 {
+    color: white;
+    font-size: 1.7vw;
+    letter-spacing: 2.5px;
+    display: inline-block;
+    margin-bottom: 5%;
+
+}
+
+  #payment .heading {
+    text-align: center;
+    margin-bottom: 3%;
+  }
+
+  #payment .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+
+  #payment .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+
+  #payment .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+
+  #payment .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+
+  #payment .col-25,
+  #payment .col-50,
+  #payment .col-75 {
+    padding: 0 16px;
+  }
+
+  #payment .container {
+    background-color: black;
+    padding: 20px 20px 15px 20px;
+    border: 1px solid #9d0b0b;
+    border-radius: 3px;
+  }
+
+  #payment input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #9d0b0b;
+    border-radius: 3px;
+  }
+
+  #payment input {
+    background-color: black;
+  }
+
+  #payment input:focus {
+    background-color: white;
+  }
+
+  #payment .pay-label {
+    margin-bottom: 10px;
+    display: block;
+    color: #dddddd;
+    font-size: 1.2vw;
+  }
+
+  #payment .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+
+  #payment .btn-pay {
+    background-color: #9d0b0b;
+    color: white;
+    padding: 12px;
+    margin: 2% 33%;
+    border: none;
+    width: 35%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+
+  #payment .btn-pay:hover {
+    background-color: #6a0000;
+    color: white;
+  }
+
+  #payment a {
+    color: #979797;
+  }
+
+  #payment hr {
+    border: 1px solid #9d0b0b;
+  }
+
+  #payment span.price {
+    float: right;
+    color: grey;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    #payment .row {
+      flex-direction: column-reverse;
+    }
+    #payment .col-25 {
+      margin-bottom: 20px;
+    }
+  } 
