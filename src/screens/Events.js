@@ -20,10 +20,10 @@ constructor(props){
         </ul>
         </li>
     </ul>
-  );
+  )
 render(){
     if(localStorage.getItem('email')==null){
-        <Redirect to="/login"/>
+        return <Redirect to="/login"/>
     }
     return (
         <>
