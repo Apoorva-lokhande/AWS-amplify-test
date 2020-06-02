@@ -15,7 +15,7 @@ class UserDetails extends React.Component
             <div class="wrapper">
                 <div class="left">
                     <img src="https://i.imgur.com/cMy8V5j.png" alt="user" />
-                    <h4>Alex William</h4>
+        <h4>{localStorage.getItem('name')}</h4>
                 </div>
                 <div class="rightUser">
                     <div class="info">
@@ -23,11 +23,11 @@ class UserDetails extends React.Component
                         <div class="info_data">
                             <div class="data">
                                 <h4>Email</h4>
-                                <p>alex@gmail.com</p>
+        <p>{localStorage.getItem('email')}</p>
                             </div>
                             <div class="data">
                             <h4>Phone</h4>
-                                <p>0001-213-998761</p>
+        <p>{localStorage.getItem('phone')}</p>
                         </div>
                         <div class="data">
                             <h4>State</h4>

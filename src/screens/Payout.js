@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Redirect} from 'react-router-dom'
 import "./Payout.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -8,6 +8,10 @@ class Payout extends React.Component
 {
     render()
     {
+        if(localStorage.getItem('email')!==null){
+            return <Redirect to="/login"/>
+          }
+          
         return (
             <>
             <Header />

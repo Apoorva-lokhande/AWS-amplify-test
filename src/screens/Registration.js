@@ -3,7 +3,7 @@ import ImageUploader from 'react-images-upload';
 import "./Registration.css";
 import Header from "../components/Header";
 
-
+import {Redirect} from 'react-router-dom'
 class Registration extends React.Component
 {
 constructor(props) {
@@ -24,7 +24,7 @@ this.submit=this.submit.bind(this)
     </ul>
     );
    async register(){
-         var res= await fetch("http://localhost:8000/teamreg/",{
+         var res= await fetch("http://gamersbackp.herokuapp.com/teamreg/",{
     method: 'POST',
     
     headers: {

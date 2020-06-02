@@ -44,7 +44,20 @@ class Register extends React.Component{
   //console.log(response.profileObj);
 }
    async signup(){
-        var res=await fetch("http://localhost:8000/register/",{
+    var res=await fetch("http://gamersbackp.herokuapp.com/checkemail/",{
+      method: 'POST',
+      
+      headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: "email="+this.state.email
+    })
+    var data=await res.json()
+    if (data.registered=="true"){
+      alert('email is registered')
+      return <Redirect to="/register"/>
+    }
+        var res=await fetch("http://gamersbackp.herokuapp.com/register/",{
            method: 'POST',
     
     headers: {
@@ -53,12 +66,12 @@ class Register extends React.Component{
     body: "email="+this.state.email+"&password="+this.state.password+"&gender="+this.state.gender+"&name="+this.state.name+"&username="+this.state.username
 
         })
-      alert("Signup done")
+      
       localStorage.setItem("email",this.state.email)
     localStorage.setItem("username",this.state.username)
     localStorage.setItem("gender",this.state.gender)
     localStorage.setItem("name",this.state.name)
-      this.setState({usernamepop:false})
+      
       this.setState({done:true})
     }
     
@@ -66,6 +79,10 @@ render(){
   if (this.state.done){
     return <Redirect to="/home"/>
   }
+  if(localStorage.getItem('email')!==null){
+    return <Redirect to="/home"/>
+  }
+  
     return (
       <>
        <img src={background} class="backimg"></img> 

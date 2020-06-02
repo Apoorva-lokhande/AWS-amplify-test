@@ -5,20 +5,26 @@ import Header from "../components/Header";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
 import { Link, Redirect } from "react-router-dom"
-const Events = () => {
-
-    const account = (
+class Events extends React.Component{
+constructor(props){
+    super(props)
+    this.state={}
+}
+    account = (
         <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-user"></i> Hello, Esha<span class="caret"></span></a>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-user"></i> Hello, {localStorage.getItem('name')}<span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="#"><Link to="/profile">Account Info</Link></a></li>
             <li><a href="#"><Link to="/bookinghistory">History</Link></a></li>
-            <li><a href="#"><i class="fas fa-sign-out-alt"></i><Link to="/login"> LogOut</Link></a></li>
+            <li><a onClick={()=>{localStorage.removeItem('email')}}><i class="fas fa-sign-out-alt"></i> LogOut</a></li>
         </ul>
         </li>
     </ul>
   );
-
+render(){
+    if(localStorage.getItem('email')==null){
+        <Redirect to="/login"/>
+    }
     return (
         <>
         <div id="events-div">
@@ -219,7 +225,7 @@ const Events = () => {
             </div>
         </div>
         </>
-    );
+    );}
 };
 
 export default Events;

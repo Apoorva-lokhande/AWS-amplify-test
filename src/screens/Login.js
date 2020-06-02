@@ -51,7 +51,7 @@ class Login extends React.Component
     return validator.isEmail(this.state.email) && this.state.password.length > 6;
   };
 async login(){
-  var res=await fetch("http://localhost:8000/login/",{
+  var res=await fetch("http://gamersbackp.herokuapp.com/login/",{
     method: 'POST',
     
     headers: {
@@ -64,7 +64,7 @@ async login(){
   if (data.msg!=undefined){
 alert(data.msg)
   }else{
-   alert("Login Sucsess")
+
    localStorage.setItem("email",data.email)
     localStorage.setItem("username",data.username)
     localStorage.setItem("gender",data.gender)
@@ -74,7 +74,7 @@ alert(data.msg)
   
 }
 async signup(){
-        var res=await fetch("http://localhost:8000/register/",{
+        var res=await fetch("http://gamersbackp.herokuapp.com/register/",{
            method: 'POST',
     
     headers: {
@@ -126,6 +126,9 @@ async signup(){
   render()
   { 
     if (this.state.done){
+      return <Redirect to="/home"/>
+    }
+    if(localStorage.getItem('email')!==null){
       return <Redirect to="/home"/>
     }
     
