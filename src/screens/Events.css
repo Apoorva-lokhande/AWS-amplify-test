@@ -5,12 +5,20 @@
     text-align: center;
 }
 
+#dropdownthing{
+    background-color: #121212;
+    color: red;
+    font-size: 15px;
+}
 #events-div .events-container {
     /* overflow: auto; */
     /* white-space: nowrap; */
     margin: 3% 5% 0;
 }
-
+#testest{
+    font-size: 15px;
+    color: #ec3535;
+}
 #events-div .events-heading {
     font-family: 'DM Mono', monospace;
     font-size: 2.7vw;
@@ -107,12 +115,39 @@ marquee {
 
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
+    background-color: #121212;
     /* border-radius: 10px; */
   }
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #9d0b0b;
+    background: hsl(0, 91%, 57%);
+    border-radius: 25px;
+
     /* border-radius: 10px; */
   }
+  .carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: .6s;
+    transition-property: opacity;
+   }
+   
+   .carousel-fade  .carousel-item.active,
+   .carousel-fade  .carousel-item-next.carousel-item-left,
+   .carousel-fade  .carousel-item-prev.carousel-item-right {
+     opacity: 1;
+   }
+   
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-right {
+    opacity: 0;
+   }
+   
+   .carousel-fade  .carousel-item-next,
+   .carousel-fade .carousel-item-prev,
+   .carousel-fade .carousel-item.active,
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+   }

@@ -24,9 +24,9 @@ class Header extends React.Component
                     <a className="nav-item nav-link" href="#">Pricing</a> */}
                     </div>
                 </div>
-             
+             <div id="elementsideka">
                 {this.props.rightElement}
-       
+       </div>
                 </nav>
             </>
         );

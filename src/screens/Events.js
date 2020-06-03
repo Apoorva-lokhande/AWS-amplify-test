@@ -8,21 +8,24 @@ import { Link, Redirect } from "react-router-dom"
 class Events extends React.Component{
 constructor(props){
     super(props)
-    this.state={}
+    this.state={logout:false}
 }
     account = (
         <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-user"></i> Hello, {localStorage.getItem('name')}<span class="caret"></span></a>
-        <ul class="dropdown-menu">
+        <li class="dropdown"><a id="testest" class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-user"></i> Hello, {localStorage.getItem('name')}<span class="caret"></span></a>
+        <ul class="dropdown-menu" id="dropdownthing">
             <li><a href="#"><Link to="/profile">Account Info</Link></a></li>
             <li><a href="#"><Link to="/bookinghistory">History</Link></a></li>
-            <li><a onClick={()=>{localStorage.removeItem('email')}}><i class="fas fa-sign-out-alt"></i> LogOut</a></li>
+            <li><a onClick={()=>{localStorage.removeItem('email');this.setState({logout:true})}}><i class="fas fa-sign-out-alt"></i> LogOut</a></li>
         </ul>
         </li>
     </ul>
   )
 render(){
     if(localStorage.getItem('email')==null){
+        return <Redirect to="/login"/>
+    }
+    if(this.state.logout){
         return <Redirect to="/login"/>
     }
     return (

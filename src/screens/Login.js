@@ -99,27 +99,25 @@ async signup(){
   
   register = (
     <>
-    <span class="navbar-text icons">
-      <div className="form-inline">
-        <div className="form-group social-icon">
-        <a href="https://www.instagram.com/gamersbackglobal/"><img src={instagram} style={{width:"30px"}} alt="logo"/></a>
+    <div class="iocns">
+     
+        <div className="iocns">
+        <a href="https://www.instagram.com/gamersbackglobal/"><img src={instagram} style={{width:"30px",marginTop:"6px",marginRight:"15px"}} alt="logo"/></a>
+      
+       
+        <a href="https://www.youtube.com/channel/UCibcdFoWrXPn_a-h-K_fvaQ"><img src={youtube} style={{width:"35px",marginTop:"4px",marginRight:"15px"}} alt="logo"/></a>
+      
+       
+        <a><img src={discord} style={{width:"40px",marginTop:"1px"}} alt="logo"/></a>
         </div>
-        <div className="form-group social-icon">
-        <a href="https://www.youtube.com/channel/UCibcdFoWrXPn_a-h-K_fvaQ"><img src={youtube} style={{width:"35px"}} alt="logo"/></a>
-        </div>
-        <div className="form-group social-icon">
-        <a><img src={discord} style={{width:"40px"}} alt="logo"/></a>
-        </div>
-      </div>
-    </span>
-    <div>
-     <span class="navbar-text">
-     </span>
-    </div>
-      <button  
+        <Link to="/register">  <button  
       class="regbutton" >
-      <Link to="/register"><span class="rg">Register</span></Link>
-      </button>
+     Register
+      </button></Link>
+    </div>
+    <div>
+    </div>
+     
     </>
    );
 
@@ -137,7 +135,7 @@ async signup(){
         <img src={background} class="backimg"></img>  
             <Header 
             leftElement={this.login}
-            rightElement={this.register} style={{width: '100%',position: 'absolute',height: '30%' }}/>
+            rightElement={this.register} />
           
    
  

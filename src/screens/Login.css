@@ -49,7 +49,7 @@ align-items: center;
     position: absolute;
     top: 30%;
     left: 7%;
-    font-size:60px;
+    font-size:58px;
     font-family: moist;
     color: grey;
     font-stretch: 10px;
@@ -57,9 +57,9 @@ align-items: center;
 }
 .help{
     position: absolute;
-    top: 50%;
-    left: 7%;
-    font-size:25px;
+    top: 45%;
+    left: 8%;
+    font-size:22px;
     font-family: montserrat-bold;
     color: grey;
     margin-top: 20px
@@ -108,16 +108,29 @@ label {
     color: white;
     font-size: 1.4vw;
 }
-
+.iocns{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
 .regbutton{
-    border-radius: 20px;
+    margin-left: 15px;
+    width: 70px;
+    margin-top: 2.5px;
+    height: 35px;
+    border-radius: 10px;
     border-width: 1px;
-    border-color: red;
+    border-color: rgb(233, 58, 58);
     background-color: black;
     color: white;
-    padding: 5px 15px 5px 15px;
+    font-size: 12px;
+    
    
 
+}
+.regbutton:hover{
+    background-color: red;
+    color: black;
 }
 #lable{
     color: white;
@@ -149,7 +162,7 @@ navbar-text{
     border-color: #282828;
     position: absolute;
     height: 65%;
-    width: 25%;
+    width: 22%;
     right: 4%;
     padding: 20px 20px 20px 20px;
   
@@ -166,7 +179,7 @@ navbar-text{
     font-weight: bold;
     font-size: 29px;
     margin-top: 10px;
-    color: red
+    color: rgb(194, 18, 18)
 }
 .p1{
     font-family: montserrat;
@@ -181,13 +194,15 @@ navbar-text{
    
     margin-top: 40px;
     border-radius: 20px;
-    background-color:red;
+    background-color:rgb(184, 17, 17);
   border-width: 0px;
-  width: 90%;
+  width: 80%;
   height: 40px;
   color:white;
 }
-
+.bt:hover{
+    background-color: red;
+}
 /* label {
     position: absolute;
     top: 70px;
@@ -198,15 +213,20 @@ navbar-text{
 }
 .form-contro{
    border-width: 1.2px;
-   border-color: red;
+   border-color: rgb(192, 59, 59);
    width: 90%;
+   border-radius: 10px;
    height: 40px;
    margin-top: 6px;
+   font-size: 13px;
     text-align: center;
   color:white;
    background-color: black;
 }
-
+.form-contro:focus{
+    width: 100%;
+    height: 45px;
+}
 
 .forgott{
     font-size: 12px;

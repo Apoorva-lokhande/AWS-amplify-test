@@ -7,15 +7,16 @@ class Footer extends React.Component{
 		if(this.props.login){
 			return(
 				<footer  style={{position: 'absolute',bottom: 0,marginTop: '15px',
-    padding: '1.5% 15%',
+    
     backgroundColor: 'transparent',
-    height: '12%',
+    height: '5%',
     display: 'flex',
     flexDirection: 'row',
+    justifyContent:'center',
     width: '100%'}}>
 
             
-            <p class="end"><b>About Us</b></p>
+            <p class="services"><b>About Us</b></p>
             <p class="services"><b>Services</b></p>
  <p class="services"><b>Future Plan</b></p>
   <p class="services"><b>Reach Us</b></p>

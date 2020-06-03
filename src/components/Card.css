@@ -6,7 +6,10 @@
   text-align: center;
   box-shadow: 0 0 4px 0 rgba(255, 253, 253, 0.19), 0 0 10px 0 rgba(68, 64, 64, 0.19);
 }
-
+#bookme{
+  background-color: rgb(201, 30, 30);
+  margin-top: 4px;
+}
 #main-card .card-img-top {
     width: 100%;
 }

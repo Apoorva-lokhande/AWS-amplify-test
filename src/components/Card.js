@@ -11,8 +11,8 @@ const Card = (props) => {
                 <p class="card-text">{props.text}</p>
                 <a class="small-text">{props.smallText}</a> <br />
                 <div className="buttons">
-                    <a href="#" class="btn btn-danger card-btn btn-1"><Link to="/pay">Book Now</Link></a>
-                    <a href="#" class="btn btn-danger card-btn btn-2"><Link to="/aboutevent">More Details</Link></a>
+                <Link to="/pay">  <button  class="btn btn-danger  " id="bookme">Book Now</button></Link>
+          
                 </div>        
             </div>
         </div>
